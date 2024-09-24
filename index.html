@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智数航旅 - 企业简介</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+       	/* 导航栏样式 */
+		.navbar {
+			background-color: #fff;
+			padding: 10px 20px;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: wrap;
+			/* 允许换行 */
+		}
+
+		.navbar .links {
+			display: flex;
+			flex-wrap: wrap;
+			/* 允许换行 */
+			justify-content: center;
+			/* 中心对齐 */
+		}
+
+		.navbar a {
+			text-decoration: none;
+			color: #333;
+			margin: 0 15px;
+		}
+
+
+		/* 登录按钮样式 */
+		.navbar .login {
+			background-color: #ff7f00;
+			padding: 5px 10px;
+			border-radius: 5px;
+			color: #fff;
+			margin-left: 15px;
+			/* 添加左边距以确保与其他链接有间距 */
+		}
+
+		/* Logo 样式 */
+		.navbar .logo {
+			font-size: 20px;
+			font-weight: bold;
+		}
+        /* 横幅样式 */
+        .banner {
+            background-image: url('https://zhengjia-member.oss-accelerate.aliyuncs.com/index-banner_20230907105548.png'); /* 这里替换为实际的背景图片地址 */
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: white;
+            height: 500px;
+            width: 100%;
+        }
+        .banner h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        /* 内容部分 */
+        .content {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .tab-link {
+            cursor: pointer;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-bottom: 2px solid #007bff;
+            border-radius: 5px 5px 0 0;
+        }
+        .tab-pane {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+        .tab-pane.active {
+            display: block;
+        }
+        /* 页脚样式 */
+        .footer {
+            background-color: #222;
+            color: white;
+            padding: 40px 20px;
+        }
+        .footer .footer-links {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .footer .footer-links a {
+            color: #ccc;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .footer .contact-info {
+            text-align: center;
+            font-size: 14px;
+            color: #ccc;
+        }
+        .footer .qr-codes {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .footer .qr-codes img {
+            width: 120px;
+            height: 120px;
+            margin: 0 10px;
+        }
+        .footer-bottom {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+            color: #888;
+        }
+        .footer-icons {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+            background-color: #f5f5f5;
+        }
+        .footer-icon {
+            display: flex;
+            align-items: center;
+            margin: 0 30px;
+            font-size: 14px;
+            color: #333;
+        }
+        .footer-icon img {
+            margin-right: 10px;
+            width: 40px;
+            height: 40px;
+        }
+        /* 修改样式将 contact-info 和 qr-codes 水平分布 */
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+			margin: 0 20px;
+        }
+        .footer-top .contact-info {
+            text-align: left;
+        }
+        .footer-top .qr-codes {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 导航栏 -->
+    <div class="navbar">
+        <div class="logo">智数航旅</div>
+        <div class="links">
+            <a href="shouye.html">首页</a> <!-- 修改此行 -->
+            <a href="#">公司概况</a>
+            <a href="#">企业文化</a>
+            <a href="#">个人旅行</a>
+            <a href="#">分销管理</a>
+            <a href="#">关于我们</a>
+        </div>
+        <div>
+            <a href="#" class="login">登录</a>
+            <a href="#" class="login">免费注册</a>
+        </div>
+    </div>
+
+    <!-- 横幅部分 -->
+    <div class="banner"></div>
+
+    <!-- 内容部分 -->
+    <div class="content">
+        <div class="tabs">
+            <a href="#" class="tab-link active" data-tab="tab1">企业简介</a>
+            <a href="#" class="tab-link" data-tab="tab2">发展历程</a>
+            <a href="#" class="tab-link" data-tab="tab3">团队介绍</a>
+            <a href="#" class="tab-link" data-tab="tab4">项目成功</a>
+            <a href="#" class="tab-link" data-tab="tab5">诚聘英才</a>
+            <a href="#" class="tab-link" data-tab="tab6">联系我们</a>
+        </div>
+        <div class="tab-content">
+            <div id="tab1" class="tab-pane active">
+                <h2>企业简介</h2>
+                <p>
+                    成都智数航旅科技有限责任公司成立于2014年，国内二类航空旅游集团，并与国内知名品牌达成战略合作的庞大平台，先后投资100多家航空公司及合作关系，覆盖国内、公司范围广泛，专业化管理，综合覆盖多个领域。
+                    目前航空业务主要覆盖：票务、机票、旅游、签证、酒店、邮轮、会奖、差旅、商务包车、公务机出行、全球酒店、全球签证、商务包车等，致力为客户的旅行提供一站式方案。
+                </p>
+            </div>
+            <div id="tab2" class="tab-pane">
+                <h2>发展历程</h2>
+                <p>这里是发展历程的内容。</p>
+            </div>
+            <div id="tab3" class="tab-pane">
+                <h2>团队介绍</h2>
+                <p>这里是团队介绍的内容。</p>
+            </div>
+            <div id="tab4" class="tab-pane">
+                <h2>项目成功</h2>
+                <p>这里是项目成功的内容。</p>
+            </div>
+            <div id="tab5" class="tab-pane">
+                <h2>诚聘英才</h2>
+                <p>这里是诚聘英才的内容。</p>
+            </div>
+            <div id="tab6" class="tab-pane">
+                <h2>联系我们</h2>
+                <p>这里是联系我们的内容。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚图标部分 -->
+    <div class="footer-icons">
+        <div class="footer-icon">
+            <img src="https://tehang.com/images/price@2x.png" alt="图标1"> <!-- 替换为实际图标URL -->
+            <p>价格优惠，购买放心</p>
+        </div>
+        <div class="footer-icon">
+            <img src="https://tehang.com/images/quality@2x.png" alt="图标2"> <!-- 替换为实际图标URL -->
+            <p>品质保证，安心出行</p>
+        </div>
+        <div class="footer-icon">
+            <img src="https://tehang.com/images/products@2x.png" alt="图标3"> <!-- 替换为实际图标URL -->
+            <p>产品多样，服务优质</p>
+        </div>
+        <div class="footer-icon">
+            <img src="https://tehang.com/images/contact@2x.png" alt="图标4"> <!-- 替换为实际图标URL -->
+            <p>24小时客服，预订无忧</p>
+        </div>
+    </div>
+
+    <!-- 页脚部分 -->
+    <div class="footer">
+        <div class="footer-top">
+            <div class="contact-info">
+                <p>服务电话：028-68730508</p>
+                <p>地址：中国（四川）自由贸易试验区成都高新区天府大道北段1700号9栋1单元17层1730号</p>
+            </div>
+            <!-- <div class="qr-codes">
+                <img src="https://tehang.com/images/tmc-app@2x.png" alt="特航航空APP二维码">  替换为正确的二维码图片URL 
+                <img src="https://tehang.com/images/wechat-account@2x.png" alt="特航航空公众号二维码"> 替换为正确的二维码图片URL 
+            </div> -->
+        </div>
+        <div class="footer-links">
+            <a href="#">首页</a>
+            <a href="#">公务出行</a>
+            <a href="#">企业出行</a>
+            <a href="#">个人旅行</a>
+            <a href="#">分销加盟</a>
+            <a href="#">关于我们</a>
+        </div>
+    </div>
+
+    <!-- 页脚底部版权信息 -->
+    <div class="footer-bottom">
+        版权所有 © 成都智数航旅科技有限公司 
+    </div>
+
+</body>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const tabLinks = document.querySelectorAll('.tab-link');
+    const tabPanes = document.querySelectorAll('.tab-pane');
+
+    tabLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            // Remove active class from all tab links and panes
+            tabLinks.forEach(link => link.classList.remove('active'));
+            tabPanes.forEach(pane => pane.classList.remove('active'));
+
+            // Add active class to the clicked tab link and corresponding pane
+            const targetTab = this.getAttribute('data-tab');
+            this.classList.add('active');
+            document.getElementById(targetTab).classList.add('active');
+        });
+    });
+});
+</script>
+</html>
